@@ -67,3 +67,22 @@ Per riprodurre le metriche (CER/TED) utilizzando lo script di valutazione standa
     ```bash
     python scripts/evaluate.py data/cm1_cover_test.json data/predictions/predictions_qwen3_8b_50samples.json results/risultati_qwen_8b_50samples.csv
     ```
+##  Riferimenti e Dati
+
+Questo progetto utilizza il dataset **CM1** come descritto nel seguente lavoro di ricerca:
+
+* **Paper:** [CM1 -- A Dataset for Evaluating Few-Shot Information Extraction with Large Vision Language Models](https://arxiv.org/abs/2505.04214)
+* **Dataset:** [[Inserisci qui il link al GitHub/Sito da cui hai scaricato lo zip](https://github.com/fabiwo6/cm1)]
+
+Se utilizzi questo dataset per scopi di ricerca, considera di citare il paper originale:
+
+```bibtex
+@misc{wolf2025cm1datasetevaluating,
+      title={CM1 -- A Dataset for Evaluating Few-Shot Information Extraction with Large Vision Language Models}, 
+      author={Fabian Wolf and Oliver Tüselmann and Arthur Matei and Lukas Hennies and Christoph Rass and Gernot A. Fink},
+      year={2025},
+      eprint={2505.04214},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.04214}, 
+}
