@@ -1,1 +1,7 @@
-
+pandas
+matplotlib
+levenshtein
+zss
+openai
+ollama
+tqdm
