@@ -6,10 +6,10 @@ L'obiettivo è l'estrazione strutturata di informazioni anagrafiche (`Name`, `Vo
 
 ## 🧠 Modelli Analizzati
 
-1.  **GPT-4o** (Baseline SOTA - Cloud API)
-2.  **Qwen3-VL 8B** (Open Source - Esecuzione Locale su Colab T4)
-3.  **PaliGemma** (Google)
-4.  **Donut** (Document Understanding Transformer)
+1.  **GPT-4o** 
+2.  **Qwen3-VL 8B** 
+3.  **PaliGemma** 
+4.  **Donut** 
 5.  **Qwen2.5-VL**
 
 ## 📊 Sintesi dei Risultati
@@ -34,7 +34,7 @@ La sperimentazione ha dimostrato che i modelli open-source standard faticano in 
 ## 📂 Struttura del Repository
 
 * `inference_notebooks/`: Contiene i link ai Jupyter Notebook utilizzati per l'esecuzione dei modelli su Google Colab.
-* `scripts/`: Script Python per la valutazione (`evaluate.py`) e la gestione del dataset.
+* `scripts/`: Script Python per la valutazione (`evaluate.py`).
 * `data/`: File JSON di Ground Truth e predizioni generate dai modelli.
 * `results/`: Report dettagliati in formato CSV.
 * `evaluate_cm1.ipynb`: Notebook principale di analisi e visualizzazione dei grafici.
@@ -45,10 +45,10 @@ Per replicare gli esperimenti di inferenza senza occupare risorse locali, utiliz
 
 | Modello | Link al Notebook | Descrizione |
 | :--- | :--- | :--- |
-| **Qwen3-VL 8B** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](INSERISCI_QUI_IL_TUO_LINK_QWEN) | Inferenza locale via Ollama su GPU T4 |
-| **PaliGemma** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12S3a1Q8wcsBCZJ5ELX2r-EbBy2FvcM-Z) | Inferenza Zero-shot tramite Hugging Face |
-| **Donut** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1VY5JXD2rK4URdG13NNIFxtKE3K9xvvE1) | Test vari checkpoint (Base, DocVQA) |
-| **Qwen2.5-VL** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15a_furEJ7RcD-ir430cH0T7Xff7T0jww) | Test modelli 3B/7B |
+| **Qwen3-VL 8B** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1BY4mQD1t3mpYksCWsssAZsFFaCF61eH9?usp=share_link) | Inferenza locale via Ollama su GPU T4 |
+| **PaliGemma** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1BY4mQD1t3mpYksCWsssAZsFFaCF61eH9?usp=share_link) | Inferenza Zero-shot tramite Hugging Face |
+| **Donut** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1VY5JXD2rK4URdG13NNIFxtKE3K9xvvE1?usp=share_link) | Test vari checkpoint (Base, DocVQA) |
+| **Qwen2.5-VL** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15a_furEJ7RcD-ir430cH0T7Xff7T0jww?usp=share_link) | Test modelli 3B/7B |
 
 ## 🛠 Metodologia di Valutazione
 
