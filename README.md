@@ -4,7 +4,7 @@ Questo repository contiene il codice, i dati e i risultati dell'analisi comparat
 
 L'obiettivo è l'estrazione strutturata di informazioni anagrafiche (`Name`, `Vorname`, `Geb-Dat`) da documenti storici manoscritti complessi.
 
-## 🧠 Modelli Analizzati
+## Modelli Analizzati
 
 1.  **GPT-4o** 
 2.  **Qwen3-VL 8B** 
@@ -12,7 +12,7 @@ L'obiettivo è l'estrazione strutturata di informazioni anagrafiche (`Name`, `Vo
 4.  **Donut** 
 5.  **Qwen2.5-VL**
 
-## 📊 Sintesi dei Risultati
+## Sintesi dei Risultati
 
 La sperimentazione ha dimostrato che i modelli open-source standard faticano in modalità zero-shot. Tuttavia, l'applicazione di tecniche di **Prompt Engineering** (normalizzazione date ISO e maiuscole) ha permesso al modello **Qwen3-VL (8B)** di raggiungere prestazioni competitive con lo stato dell'arte.
 
@@ -31,7 +31,7 @@ La sperimentazione ha dimostrato che i modelli open-source standard faticano in 
 * **CER (Character Error Rate):** Minore è meglio (0.0 = perfetto).
 * **TED (Tree Edit Distance):** Maggiore è meglio (1.0 = struttura perfetta).
 
-## 📂 Struttura del Repository
+## Struttura del Repository
 
 * `inference_notebooks/`: Contiene i link ai Jupyter Notebook utilizzati per l'esecuzione dei modelli su Google Colab.
 * `scripts/`: Script Python per la valutazione (`evaluate.py`).
@@ -39,7 +39,7 @@ La sperimentazione ha dimostrato che i modelli open-source standard faticano in 
 * `results/`: Report dettagliati in formato CSV.
 * `evaluate_cm1.ipynb`: Notebook principale di analisi e visualizzazione dei grafici.
 
-## 🚀 Notebook di Inferenza (Google Colab)
+## Notebook di Inferenza (Google Colab)
 
 Per replicare gli esperimenti di inferenza senza occupare risorse locali, utilizzare i seguenti notebook Colab:
 
@@ -50,7 +50,11 @@ Per replicare gli esperimenti di inferenza senza occupare risorse locali, utiliz
 | **Donut** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1VY5JXD2rK4URdG13NNIFxtKE3K9xvvE1?usp=share_link) | Test vari checkpoint (Base, DocVQA) |
 | **Qwen2.5-VL** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15a_furEJ7RcD-ir430cH0T7Xff7T0jww?usp=share_link) | Test modelli 3B/7B |
 
-## 🛠 Metodologia di Valutazione
+## Metodologia di Valutazione
+
+### Procedura di Inferenza
+* **Modelli Open Source:** L'inferenza è stata eseguita programmaticamente su ambiente Google Colab (GPU T4) utilizzando le librerie `transformers` e `ollama`.
+* **GPT-4o:** Le predizioni sono state ottenute mediante **inferenza diretta tramite l'interfaccia web ufficiale** (ChatGPT). Il dataset di test (10 immagini) è stato processato singolarmente applicando il prompt strutturato, simulando uno scenario di utilizzo *human-in-the-loop*.
 
 Per riprodurre le metriche (CER/TED) utilizzando lo script di valutazione standardizzato (che include normalizzazione del testo e allineamento ID):
 
