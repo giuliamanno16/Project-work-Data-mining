@@ -72,7 +72,7 @@ Per riprodurre le metriche (CER/TED) utilizzando lo script di valutazione standa
 Questo progetto utilizza il dataset **CM1** come descritto nel seguente lavoro di ricerca:
 
 * **Paper:** [CM1 -- A Dataset for Evaluating Few-Shot Information Extraction with Large Vision Language Models](https://arxiv.org/abs/2505.04214)
-* **Dataset:** [[Inserisci qui il link al GitHub/Sito da cui hai scaricato lo zip](https://github.com/fabiwo6/cm1)]
+* **Dataset:** [](https://github.com/fabiwo6/cm1)
 
 Se utilizzi questo dataset per scopi di ricerca, considera di citare il paper originale:
 
